@@ -1,0 +1,162 @@
+﻿@page "/reservation"
+@using MauiApp1.Data;
+@using System.IO;
+<div>
+	<div class="row"><h3 style="text-align:center">Reservation Finder</h3></div>
+	<div class="row mt-2 g-3">
+		<div class="col-3">Code:</div>
+		<div class="col-3">Airline:</div>
+		<div class="col-3">Name:</div>
+	</div>
+	<div class="row  g-3">
+		<div class="col-3">
+			<input type="text" class="form-control" id="from" placeholder="Code" @onchange="showrescode">
+		</div>
+		<div class="col-3">
+			<input type="text" class="form-control" id="to" placeholder="Airline" @onchange="showairlinecode">
+		</div>
+		<div class="col-3 ">
+			<input type="text" class="form-control" id="date" placeholder="Name" @onchange="shownameofres">
+		</div>
+
+		<div class="col-3 ">
+			<button type="button" class="btn btn-outline-primary" style="width:14em" @onclick="fetchinfo">Find Reservations </button>
+		</div>
+	</div>
+	<div class="row mt-4"><h3 style="text-align:center">Reservations</h3></div>
+	<div class="row mt-2 g-3">
+		<div class="col-sm mb-3">
+			<input type="text" class="form-control" id="flights" placeholder="Loading..." value="@message">
+		</div>
+	</div>
+	<div class="row mt-4"><h3 style="text-align:center">Reserve</h3></div>
+	<div class="row mt-2  g-3">
+		<div class="col-6">Reservation Code:</div>
+		<div class="col-6">Flight Code:</div>
+	</div>
+	<div class="row">
+		<div class="col-6">
+			<input type="text" class="form-control" id="flights" placeholder="Reservation Code" value="@Reservationcode" disabled>
+		</div>
+		<div class="col-6">
+			<input type="text" class="form-control" id="flights" placeholder="Flight Code" value="@Flightcode" disabled>
+		</div>
+	</div>
+	<div class="row mt-3  g-3">
+		<div class="col-6">Airline:</div>
+		<div class="col-6">Cost:</div>
+	</div>
+	<div class="row">
+		<div class="col-6">
+			<input type="text" class="form-control" id="flights" placeholder="Airline" value="@Airlinename" disabled>
+		</div>
+		<div class="col-6">
+			<input type="text" class="form-control" id="flights" placeholder="Cost" value="@CostOfFlight" disabled>
+		</div>
+	</div>
+	<div class="row mt-3  g-3">
+		<div class="col-4">Name:</div>
+		<div class="col-4">Citizenship:</div>
+		<div class="col-4">Status:</div>
+	</div>
+	<div class="row">
+		<div class="col-4">
+			<input type="text" class="form-control" id="flights" placeholder="Name" value="@Name" @onchange="namechange">
+		</div>
+		<div class="col-4">
+			<input type="text" class="form-control" id="flights" placeholder="Citizenship" value="@Citizenship" @onchange="citizenshipchange">
+		</div>
+		<div class="col-4">
+			<select class="form-select" aria-label="Default select example" @onchange="StatusChange">
+				<option value="@Status">@Status</option>
+				<option value="Active">Active</option>
+				<option value="InActive">InActive</option>
+			</select>
+		</div>
+	</div>
+	<div class="row mt-4">
+		<div class="col-5"></div>
+		<div class="col-5"><button type="button" class="btn btn-outline-success" style="width:15em" @onclick="savechanges">Save</button></div>
+	</div>
+	<div class="row mt-4">
+		<div class="col-5"></div>
+		<div class="col-5"><span>@error</span></div>
+	</div>
+</div>
+
+@code {
+	ReservationManager RM = new ReservationManager();
+	List<Data.Reservation> reserv = ReservationManager.ReadFromFile();
+	string rescode;
+	string airlinecode;
+	string Airlinename;
+	string nameofres;
+	string message;
+	string Reservationcode;
+	string Flightcode;
+	string Name;
+	string CostOfFlight;
+	string Citizenship;
+	string Status;
+	bool flag;
+	string error;
+	private void showrescode(ChangeEventArgs e)
+	{
+		rescode = e.Value.ToString();
+	}
+	private void showairlinecode(ChangeEventArgs e)
+	{
+		airlinecode = e.Value.ToString();
+	}
+	private void shownameofres(ChangeEventArgs e)
+	{
+		nameofres = e.Value.ToString();
+	}
+
+	private void fetchinfo()
+	{
+		flag = false;
+		foreach (var res in reserv)
+		{
+			if (rescode == res.ReservationCode && airlinecode == res.Flightcode && nameofres == res.Name)
+			{
+				message = res.ReservationCode + ", " + res.Airlinename + ", " + res.Flightcode + ", " + res.Name + ", " + res.CostOfFlight + ", " + res.Name + ", " + res.Citizenship + ", " + res.Status;
+				Reservationcode = res.ReservationCode;
+				Flightcode = res.Flightcode;
+				Name = res.Name;
+				CostOfFlight = res.CostOfFlight;
+				Citizenship = res.Citizenship;
+				Status = res.Status;
+				Airlinename = res.Airlinename;
+				flag = true;
+			}
+		}
+		if (flag == false)
+		{
+			message = "Loading...";
+			Reservationcode = "Reservation";
+			Flightcode = "Airline";
+			Name = "Name";
+			CostOfFlight = "Cost";
+			Citizenship = "Citizenship";
+			Airlinename = "Airline";
+		}
+	}
+	private void StatusChange(ChangeEventArgs e)
+	{
+		Status = e.Value.ToString();
+	}
+	private void namechange(ChangeEventArgs e)
+	{
+		Name = e.Value.ToString();
+	}
+	private void citizenshipchange(ChangeEventArgs e)
+	{
+		Citizenship = e.Value.ToString();
+	}
+	private void savechanges()
+	{
+		ReservationManager r = new ReservationManager();
+		r.UpdateInBinaryFile(Reservationcode, Name, Citizenship, Status);
+	}
+}

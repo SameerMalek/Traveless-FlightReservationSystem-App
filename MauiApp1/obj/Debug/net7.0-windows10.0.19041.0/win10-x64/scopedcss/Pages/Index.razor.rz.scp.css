@@ -1,0 +1,53 @@
+.row[b-ks7hjf3382] {
+    display: flex;
+}
+
+h1[b-ks7hjf3382] {
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px black;
+}
+em[b-ks7hjf3382]{
+    color:red;
+  
+}
+
+.col-9[b-ks7hjf3382], .col-4[b-ks7hjf3382], .col-6[b-ks7hjf3382] {
+    border: 0.5px solid black;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    height: 200px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-size: cover;
+    background-position: center;
+    color: #ffffff; /* Set text color to white for better visibility on images */
+    font-weight: 900;
+    text-shadow: 2px 2px black;
+}
+
+.col-9[b-ks7hjf3382] {
+    background-image: url("Img/prerequisite.jpg");
+}
+
+    .col-9:hover[b-ks7hjf3382] {
+        box-shadow: black;
+        transition: 0.5s;
+    }
+
+.col-4[b-ks7hjf3382] {
+    background-image: url("Img/luggage.jpeg");
+}
+
+.col-6[b-ks7hjf3382] {
+    background-image: url("Img/airport.jpeg");
+}
+
+    .col-9 a[b-ks7hjf3382], .col-4 a[b-ks7hjf3382], .col-6 a[b-ks7hjf3382] {
+        text-decoration: none;
+        color: inherit;
+    }

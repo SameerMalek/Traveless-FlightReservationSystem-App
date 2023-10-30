@@ -1,0 +1,93 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Owner\\OneDrive\\Desktop\\OOP2\\Assignment_2\\MauiApp1\\MauiApp1\\obj\\Debug\\net7.0-windows10.0.19041.0\\win10-x64\\scopedcss\\bundle\\MauiApp1.styles.css",
+      "PackagePath": "staticwebassets\\MauiApp1.styles.css"
+    },
+    {
+      "Id": "C:\\Users\\Owner\\OneDrive\\Desktop\\OOP2\\Assignment_2\\MauiApp1\\MauiApp1\\wwwroot\\Img\\airport.jpeg",
+      "PackagePath": "staticwebassets\\Img\\airport.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Owner\\OneDrive\\Desktop\\OOP2\\Assignment_2\\MauiApp1\\MauiApp1\\wwwroot\\Img\\luggage.jpeg",
+      "PackagePath": "staticwebassets\\Img\\luggage.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Owner\\OneDrive\\Desktop\\OOP2\\Assignment_2\\MauiApp1\\MauiApp1\\wwwroot\\Img\\prerequisite.jpg",
+      "PackagePath": "staticwebassets\\Img\\prerequisite.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Owner\\OneDrive\\Desktop\\OOP2\\Assignment_2\\MauiApp1\\MauiApp1\\wwwroot\\css\\app.css",
+      "PackagePath": "staticwebassets\\css\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\Owner\\OneDrive\\Desktop\\OOP2\\Assignment_2\\MauiApp1\\MauiApp1\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Owner\\OneDrive\\Desktop\\OOP2\\Assignment_2\\MauiApp1\\MauiApp1\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Owner\\OneDrive\\Desktop\\OOP2\\Assignment_2\\MauiApp1\\MauiApp1\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "PackagePath": "staticwebassets\\css\\open-iconic"
+    },
+    {
+      "Id": "C:\\Users\\Owner\\OneDrive\\Desktop\\OOP2\\Assignment_2\\MauiApp1\\MauiApp1\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
+      "PackagePath": "staticwebassets\\css\\open-iconic"
+    },
+    {
+      "Id": "C:\\Users\\Owner\\OneDrive\\Desktop\\OOP2\\Assignment_2\\MauiApp1\\MauiApp1\\wwwroot\\css\\open-iconic\\README.md",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\README.md"
+    },
+    {
+      "Id": "C:\\Users\\Owner\\OneDrive\\Desktop\\OOP2\\Assignment_2\\MauiApp1\\MauiApp1\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Owner\\OneDrive\\Desktop\\OOP2\\Assignment_2\\MauiApp1\\MauiApp1\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.eot"
+    },
+    {
+      "Id": "C:\\Users\\Owner\\OneDrive\\Desktop\\OOP2\\Assignment_2\\MauiApp1\\MauiApp1\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.otf"
+    },
+    {
+      "Id": "C:\\Users\\Owner\\OneDrive\\Desktop\\OOP2\\Assignment_2\\MauiApp1\\MauiApp1\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.svg"
+    },
+    {
+      "Id": "C:\\Users\\Owner\\OneDrive\\Desktop\\OOP2\\Assignment_2\\MauiApp1\\MauiApp1\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Owner\\OneDrive\\Desktop\\OOP2\\Assignment_2\\MauiApp1\\MauiApp1\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
+    },
+    {
+      "Id": "C:\\Users\\Owner\\OneDrive\\Desktop\\OOP2\\Assignment_2\\MauiApp1\\MauiApp1\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\Owner\\OneDrive\\Desktop\\OOP2\\Assignment_2\\MauiApp1\\MauiApp1\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0-windows10.0.19041.0\\win10-x64\\staticwebassets\\msbuild.MauiApp1.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0-windows10.0.19041.0\\win10-x64\\staticwebassets\\msbuild.build.MauiApp1.props",
+      "PackagePath": "build\\MauiApp1.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0-windows10.0.19041.0\\win10-x64\\staticwebassets\\msbuild.buildMultiTargeting.MauiApp1.props",
+      "PackagePath": "buildMultiTargeting\\MauiApp1.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0-windows10.0.19041.0\\win10-x64\\staticwebassets\\msbuild.buildTransitive.MauiApp1.props",
+      "PackagePath": "buildTransitive\\MauiApp1.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
